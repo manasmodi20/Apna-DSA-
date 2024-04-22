@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    cout<<endl;
+    string name;
+    float  pen,pencil,eraser;
+    float total_cost,gst,final_cost;
+
+    cout<<"Enter the cost of pen: ";
+    cin>>pen;
+    cout<<"Enter the cost of pencil: ";
+    cin>>pencil;
+    cout<<"Enter the cost of eraser: ";
+    cin>>eraser;
+
+    total_cost = pen + pencil + eraser;
+
+    gst = (total_cost * 18)/100;
+
+    final_cost = total_cost + gst;
+
+    cout<<endl;
+
+    cout<<"Your good name: ";
+    cin>>name;
+    cout<<endl;
+    cout<<"Hello "<<name<<"! Your bill is Rs "<<final_cost<<"."<<endl;
+    cout<<endl;
+    cout<<"Thank You for visiting us :-> ";
+    cout<<endl<<endl;
+    return 0;
+}
